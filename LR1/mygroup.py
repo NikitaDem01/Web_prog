@@ -39,7 +39,7 @@ def print_students(students, avr_mark):
         marks = 0
         for i in student["marks"]:
             marks = marks + i
-        if marks//3 > avr_mark:
+        if marks/3 > avr_mark:
             print(student["name"].ljust(15), student["surname"].ljust(10), str(student["exams"]).ljust(30), str(student["marks"]).ljust(20))
 
 print_students(groupmates, avr_mark)
